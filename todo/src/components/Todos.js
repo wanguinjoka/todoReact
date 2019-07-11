@@ -1,11 +1,14 @@
 import React,{Component} from 'react';
+import Todoitem from './Todoitem';
+
 
 class Todos extends Component {
   render(){
     
   return this.props.todos.map((todo) => (
-    <h3> { todo.title}</h3>)
-  );
+    <Todoitem key = {todo.id} todo={todo}/>
+  )
+);
 }
 }
 
