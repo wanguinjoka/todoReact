@@ -3,7 +3,9 @@ import Todos from './components/Todos'
 import './App.css';
 
 class App extends Component {
-  state = {
+  constructor(props){
+    super(props);
+  this.state = {
     todos: [
       {
         id:1,
@@ -22,6 +24,7 @@ class App extends Component {
       }
     ]
   }
+}
   render(){
   
   return (
