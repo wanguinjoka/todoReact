@@ -40,9 +40,18 @@ markComplete = (id) =>{
 delTodo = (id)=>{
   this.setState({todos: [...this.state.todos.filter(todo => todo.id !== id)]});
 }
+
+//Add Todo
 addTodo = (title) => {
+  const newTodo = {
+    id: 4,
+    title: title,
+    completed: false
+  }
+this.setState({todos: [...this.state.todos,newTodo]});
+  }
   
-}
+
 
   render(){
   
